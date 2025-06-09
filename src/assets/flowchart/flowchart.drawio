@@ -1,0 +1,107 @@
+<mxfile host="65bd71144e">
+    <diagram id="n5ODGsKhSwV9elsVeNDh" name="Page-1">
+        <mxGraphModel dx="598" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;" parent="1" source="2" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Start page" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="20" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Get data form API" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="140" width="150" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Got the data?" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="540" y="320" as="sourcePoint"/>
+                        <mxPoint x="420" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="Render data in cards&lt;br&gt;(images, price, etc)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="275" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Yes&lt;br&gt;" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="9" target="11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="540" y="320" as="sourcePoint"/>
+                        <mxPoint x="590" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Display error message" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="No" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="9" target="14" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="500" y="340" as="sourcePoint"/>
+                        <mxPoint x="550" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="If user adds item to cart&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                    <mxGeometry x="365" y="400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="No" style="edgeStyle=none;html=1;" parent="1" source="19" target="26" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="590" y="565"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="Does the product &lt;br&gt;already exist in cart" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="318" y="500" width="215" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Initial page" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=17;fontColor=#e9f26e;" parent="1" vertex="1">
+                    <mxGeometry x="165" y="80" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;html=1;fontSize=17;fontColor=#e9f26e;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="17" target="19" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="540" y="600" as="sourcePoint"/>
+                        <mxPoint x="590" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="Yes" style="endArrow=classic;html=1;fontSize=12;fontColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="19" target="25" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="350" y="700" as="sourcePoint"/>
+                        <mxPoint x="425.5" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;Render new number of items in cart. Render new total price&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="527.5" width="160" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=none;html=1;" parent="1" source="26" target="41" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;Add product in the cart (name, picture, price, amount)&lt;br&gt;Render new total price&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="527.5" width="140" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#FFFFFF;" parent="1" source="29" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="User pressed remove item?" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="660" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Remove one&amp;nbsp;item and render new number of items and total price" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FFFFFF;direction=south;" parent="1" vertex="1">
+                    <mxGeometry x="97.5" y="810" width="144.5" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="endArrow=classic;html=1;fontSize=12;fontColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="25" target="29" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="350" y="730" as="sourcePoint"/>
+                        <mxPoint x="400" y="680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#FFFFFF;" parent="1" source="41" target="42" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="User pressed remove item?" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="650" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Remove the whole article from cart&lt;br&gt;Render new total price" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FFFFFF;direction=south;" parent="1" vertex="1">
+                    <mxGeometry x="607.75" y="800" width="144.5" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

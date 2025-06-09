@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="src/assets/images/logo/candy-store-favicon.png" rel="icon" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c17e782cbe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/assets/css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Store</title>
+</head>
+
+<body>
+    <!-- ====== NAVBAR SECTION ====== -->
+    <header class="navbar">
+        <div class="navbar-left-section">
+            <a href="#" aria-label="Candy Store Home"><img class="navbar-logo-image"
+                    src="/src/assets/images/logo/candy.store-logo.webp" alt="Candy Store Logo"></a>
+            <h1>Candy Store</h1>
+        </div>
+        <nav class="navbar-middle-section" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#sale"><i class="fas fa-tag"></i> Sale</a></li>
+                <li><a href="#popular"><i class="fas fa-star"></i> Popular</a></li>
+                <li><a href="#deals"><i class="fas fa-tags"></i> Deals</a></li>
+                <li><a href="#sweets"><i class="fas fa-candy-cane"></i> Sweets</a></li>
+                <li><a href="#new"><i class="fas fa-bolt"></i> New</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-right-section">
+            <a href="#" class="red-ball" aria-label="View Cart" data-count="0">
+                <i class="fa-solid fa-cart-shopping shopping-cart"></i>
+            </a>
+            <button class="hamburger" aria-label="Toggle Mobile Navigation">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </button>
+        </div>
+        <nav class="mobile-navbar" aria-label="Mobile Navigation">
+            <ul>
+                <li><a href="#" aria-label="Candy Store Home"><img class="mobile-navbar-logo-image"
+                            src="/src/assets/images/logo/candy.store-logo.webp" alt="Candy Store Logo"></a></li>
+                <li><a href="#sale"><i class="fas fa-tag"></i> Sale</a></li>
+                <li><a href="#popular"><i class="fas fa-star"></i> Popular</a></li>
+                <li><a href="#deals"><i class="fas fa-tags"></i> Deals</a></li>
+                <li><a href="#sweets"><i class="fas fa-candy-cane"></i> Sweets</a></li>
+                <li><a href="#new"><i class="fas fa-bolt"></i> New</a></li>
+            </ul>
+        </nav>
+        <!-- ====== CART SECTION ====== -->
+    </header>
+    <main>
+        <section class="cart-popup hide" aria-label="Shopping Cart">
+            <div class="top">
+                <h2 class="cart-header">Your cart</h2>
+            </div>
+            <div class="cart-content">
+            </div>
+        </section>
+        <!-- ====== HERO/CAROUSEL SECTION ====== -->
+        <div class="home-page-container">
+            <div class="carousel-container">
+                <section class="carousel-gallery">
+                    <div class="carousel-content-item">
+                        <img src="/src/assets/images/carousel/carousel-01.png" alt="Sweets from around the world">
+                        <div class="caption">
+                            <h2>Crunchy Delights</h2>
+                            <p>Crispy and sweet with the perfect crunch!</p>
+                            <a href="#sale">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-content-item">
+                        <img src="/src/assets/images/carousel/carousel-02.png" alt="Exclusive Deals">
+                        <div class="caption">
+                            <h2>Gummy Bear Fun</h2>
+                            <p>Chewy, fruity, and full of flavor!</p>
+                            <a href="#sale">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-content-item">
+                        <img src="/src/assets/images/carousel/carousel-03.png" alt="New Arrivals">
+                        <div class="caption">
+                            <h2>Colorful Worms</h2>
+                            <p>Fruity, chewy, and packed with fun!</p>
+                            <a href="#sale">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-content-item">
+                        <img src="src/assets/images/carousel/carousel-04.png" alt="Lollipop Bliss">
+                        <div class="caption">
+                            <h2>Lovely Lollipops</h2>
+                            <p>Bold, vibrant, and full of flavor!</p>
+                            <a href="#sale">Buy Now</a>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Button prev and next -->
+                <div class="carousel-btn-wrapper">
+                    <button type="button" class="carousel-btn carousel-btn-left" id="carousel-prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button type="button" class="carousel-btn carousel-btn-right" id="carousel-next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="carousel-indicators" aria-label="Carousel Indicators">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <!-- ====== CARDS SECTION ====== -->
+            <div class="spinner hide" role="status"></div>
+
+            <div id="cards-container">
+                <header>
+                    <div class="displaying-info">
+                        <p class="number-of-products-in-stock display-info-para"></p>
+                        <p class="number-of-products-shown display-info-para"></p>
+                    </div>
+                </header>
+
+                <section aria-label="sale-header" id="sale">
+                    <h2 class="card-header">SALE</h2>
+                    <div class="on-sale-cards" aria-live="polite"></div>
+                </section>
+
+                <section aria-label="popular-header" id="popular">
+                    <h2 class="card-header" id="popular-header">
+                        Popular
+                        <span class="alert-text">
+                            Only a few left!
+                        </span>
+                    </h2>
+                    <div class="popular-cards"></div>
+                </section>
+
+                <section aria-label="sweets-header" id="sweets">
+                    <h2 class="card-header">Sweets</h2>
+                    <div class="sweets-cards"></div>
+                </section>
+            </div>
+
+            <div class="show-more-products-btn-container">
+                <button type="button" class="show-more-products-btn" aria-label="Show more products">Show More
+                    Products</button>
+            </div>
+
+            <!-- SHOW MORE POP UP -->
+            <div class="show-more-container">
+                <div class="popup"></div>
+            </div>
+        </div>
+        <!-- ====== CHECKOUT FORM PAGE ====== -->
+        <div class="checkout-wrapper hide">
+            <section class="checkout-container">
+                <div class="arrow-container">
+                    <i class="fa-solid fa-arrow-left back-arrow"></i>
+                </div>
+
+                <div class="form-and-item-container">
+                    <div class="form-container">
+                        <h3>Customer Information</h3>
+                        <p>Add your information below to place order</p>
+                        <form action="/post" method="POST">
+                            <div class="input-group">
+                                <label for="username">First Name</label>
+                                <input type="text" id="username" placeholder="Lisa" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" id="lastname" placeholder="Minnelli" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" placeholder="1337A Blaker Street" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="postalcode">Postal Code</label>
+                                <input type="text" id="postalcode" placeholder="21152" pattern="^\d{1,6}$" required>
+                                <small>Enter a valid 5-digit postal code</small>
+                            </div>
+                            <div class="input-group">
+                                <label for="district">District</label>
+                                <input type="text" id="district" placeholder="Lund" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="telephone">Telephone</label>
+                                <input type="tel" id="telephone" placeholder="076-123 45 67" pattern="^\d{10}$">
+                                <small>Enter a valid 10-digit phone number</small>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="email@example.com" required>
+                            </div>
+                            <button type="submit" class="submit-button">CONFIRM ORDER</button>
+                        </form>
+                    </div>
+
+                    <div class="checkout-cards-container">
+                        <div class="checkout-cards">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <!-- ====== ORDER DETAILS PAGE ====== -->
+        <div class="order-details-wrapper hide">
+            <div class="order-details-container">
+                <div class="order-details"></div>
+                <button type="button" class="home-page-btn">Continue Shopping</button>
+            </div>
+        </div>
+    </main>
+    <!-- ====== FOOTER SECTION ====== -->
+    <footer>
+        <div class="footer-container">
+            <section class="footer-section-blocks">
+                <div class="footer-block-one">
+                    <h5>About Our Candy Shop</h5>
+                    <p>Discover a delightful variety of candies crafted to brighten your day.</p>
+                    <nav>
+                        <ul class="footer-list footer-block-one-icons">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-block-two">
+                    <h5>Sweet Categories</h5>
+                    <nav>
+                        <ul class="footer-list">
+                            <li><a href="#chocolates">Chocolates</a></li>
+                            <li><a href="#gummies">Gummies</a></li>
+                            <li><a href="#lollipops">Lollipops</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-block-three">
+                    <h5>Quick Links</h5>
+                    <nav>
+                        <ul class="footer-list">
+                            <li><a href="#shop">Shop Now</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#faq">FAQs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-block-four">
+                    <h5>Get in Touch</h5>
+                    <address>
+                        <ul class="footer-list">
+                            <li>Candy Lane 1337</li>
+                            <li>Lund, Sweden</li>
+                            <li>Email: <a href="mailto:hello@candystore.com">hello@candystore.com</a></li>
+                            <li>Phone: <a href="tel:+46761234567">+46761234567</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </section>
+            <hr class="footer-horizontal-rule">
+            <div class="footer-copyright-block">
+                <p>&copy; Copyright <strong>Candy Store</strong> - Bringing Smiles & Sweetness</p>
+                <p>Designed by Lisa Maliqui, Alexander Kallin & Leo Zarazaga</p>
+            </div>
+            <div class="footer-wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
